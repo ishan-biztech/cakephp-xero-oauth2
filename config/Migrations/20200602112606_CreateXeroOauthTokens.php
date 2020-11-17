@@ -29,7 +29,6 @@ class CreateXeroOauthTokens extends AbstractMigration
         ]);
         $table->addColumn('id_token', 'text', [
             'default' => null,
-            'limit' => 255,
             'null' => true,
         ]);
         $table->addColumn('expires_at', 'string', [
